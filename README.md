@@ -205,89 +205,85 @@ Be ready to demonstrate the completed tasks to the TA at the end of the lab.
     - [ ] [Link the PR](https://docs.github.com/en/issues/tracking-your-work-with-issues/using-issues/linking-a-pull-request-to-an-issue#linking-a-pull-request-to-an-issue-using-a-keyword) to the issue, e.g. `Closes #<issue number>`.
     - [ ] Request a review from the collaborator.
 
-### 3. Roles, skills, roadmap.sh & job postings
+---
 
-Create an issue:
+### 2. Roles, skills, roadmap.sh, and job postings
 
-- `[Task] Roles and skills mapping`
-Work in branch `feature/roles-skills`.
+1. [ ] Create an issue `[Task] Roles and skills mapping`.
+2. [ ] Create a branch for it and switch to that branch, e.g., `git checkout -b task-2`.
+3. [ ] In `docs/roles-and-skills.md`:
 
-1. In `src/roles-and-skills.md`, add the following sections.
-
-   #### 3.1 Roles per module
-
-    - For each major module from `architecture.md`, list **which tech roles** are likely involved.
-        - Example: `Backend API` → backend engineer, DevOps, QA engineer, product manager.
-    - Use a simple table:
-
-        ```markdown
-        | Module            | Roles involved                         |
-        |-------------------|----------------------------------------|
-        | Mobile app        | Mobile engineer (iOS/Android), QA     |
-        | Backend API       | Backend engineer, DevOps, QA          |
-        | ...               | ...                                    |
-        ```
-
-   #### 3.2 Cross-cutting skills
-
-    - Add a section:
-
-        ```markdown
-        ## Common skills across roles
-        ```
-
-    - Based on your intuition and some research, list **skills that almost everyone needs**, for example:
-        - Git
-        - Basic Linux usage
-        - Understanding of HTTP / REST APIs
-        - Communicating in a team
-        - Writing clear issues/PR descriptions
-
-   #### 3.3 Choose a role and visit roadmap.sh
-
-    - Choose **one role** that seems most interesting to you now  
-        (e.g. backend, DevOps, frontend, mobile, data engineer, etc.).
-    - Go to [roadmap.sh](https://roadmap.sh/), find the relevant roadmap and sign in.
-    - Spend a few minutes marking items you **already have at least some knowledge in**.
-    - In your markdown file, write:
-
-        ```markdown
-        ## My chosen role
-        
-        - Role: <name>
-        - Skills I already have (from roadmap.sh): ...
-        - Skills I clearly lack (from roadmap.sh): ...
-        ```
-
-   #### 3.4 Job postings (Headhunter)
-
-    - Find **2–3 job postings** for this role on Headhunter (or a similar job site).
-    - For each posting, list:
-        - Link to the posting.
-        - Company name.
-        - Role title.
-        - 3–5 key skills/requirements they mention.
-    - Then write a short comparison:
-
-        ```markdown
-        ## Job market snapshot
-        
-        - Skills that appear in almost every posting:
+     - [ ] In the `## Roles for components` section:
+        - [ ] For each component from `architecture.md`, list IT roles that are likely involved in the development and maintenance of that component.
+        - [ ] Use a nested list. Example:
+          - Mobile app
+            - Mobile engineer (iOS/Android)
+            - QA
+            - ...
+          - Payment service
+            - Back end engineer
+            - DevOps
+            - QA
           - ...
-        - Skills that surprised me:
-          - ...
-        - My key take away:
-          - ...
-        ```
 
-2. Commit and push your changes, open a PR and link it to the issue.
+     - [ ] In the `## Common skills across roles` section:
+       - [ ] Based on your intuition and some research, list **skills that almost everyone needs**. Example:
+          - Git
+          - Basic Linux usage
+          - Understanding of HTTP / REST APIs
+          - Agentic coding
+          - Communicating in a team
+          - Writing clear issues/PR descriptions
+          - Planning
+          - ...
+
+4. [ ] Choose *one* role that seems most interesting to you now.
+5. [ ] Go to [`roadmap.sh`](https://roadmap.sh/) and sign up.
+6. [ ] Find the roadmap relevant for the role you chose.
+7. [ ] In that roadmap, mark the items you already have at least some knowledge in.
+8. [ ] In `docs/roles-and-skills.md`, in the `## My chosen role` section, write:
+
+    ```markdown
+    ### Role
+    
+    <name>
+    
+    ### Skills I already have
+    <!-- from roadmap.sh -->
+    - ...
+    
+    ### Skills I clearly lack
+    <!-- from roadmap.sh, 8-10 skills -->
+    - ...
+    ```
+
+9. [ ] Find **5-7 job postings** for this role on [`HH.ru`](https://hh.ru) or a similar job site.
+10. [ ] For each posting, list:
+    - Link to the posting.
+    - Company name.
+    - Role title.
+    - 3–5 key skills/requirements they mention.
+11. [ ] In `docs/roles-and-skills.md`, in the `## Job market snapshot` section, write:
+
+    ```markdown
+    ### Skills that appear in almost every posting
+    <!-- 3-10 skills -->
+    - ...
+    
+    ### Skills from postings that I haven't yet seen on roadmap.sh
+    <!-- 1-5 skills -->
+    - ...
+    
+    ### My key takeaway
+    ...
+    ```
+
+12. Commit and push your changes, open a PR and link it to the issue.
 
 > 💡 **LLM check:**
 >
 > - You can ask an LLM “what does a *role* usually do?”, but:
->
->   - You must visit roadmap.sh and real job postings yourself.
->
+>   - You must visit `roadmap.sh` and real job postings yourself.
 >   - Your reflections about what you have / don’t have must be honest and personal.
 >
 ---
