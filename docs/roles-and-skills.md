@@ -74,3 +74,4 @@
 - **Testing**: Unit, integration, and end-to-end testing practices
 - **Monitoring**: Prometheus, Grafana, ELK stack
 - **Soft skills**: Cross-team communication, documentation, agile methodologies
+
