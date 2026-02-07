@@ -34,7 +34,7 @@ Component interaction and data exchange:
 4. Media Service → Sharded DB: Stores lightweight metadata about the file (owner=Alice, file size, encryption keys) – not the actual media bytes
 
 ## Deployment
-![Telegram Deployment Diagram](../docs/diagrams/out/telegram/deploymet-diagram/Deployment%20Diagram.svg)
+![Telegram Deployment Diagram](../docs/diagrams/out/telegram/deployment-diagram/Deployment%20Diagram.svg)
 [Telegram Deployment Diagram Code](../docs/diagrams/src/telegram/deployment-diagram.puml)
 
 Telegram's apps run on your phone, computer, or browser and connect to Telegram's servers over the internet. Telegram runs its own servers, databases, and storage in data centers around the world—it doesn't use services like AWS or Google Cloud for its main systems. Only a few helper services (like SMS codes and phone notifications) come from outside companies; bots are run by their creators on their own servers.
@@ -43,7 +43,7 @@ Telegram's apps run on your phone, computer, or browser and connect to Telegram'
 - I assumed Telegram runs many data centers around the world, even though the diagram only showed one labeled "Primary DC."
 - I assumed media files stay encrypted while stored in the Distributed File System, though the diagram didn't explicitly show where encryption starts or ends.
 
-## Questions
+## Open questions
 - Where exactly are Telegram's data centers located around the world?
 - How does Telegram keep my messages safe if a server crashes?
 - What happens if I lose internet while sending a large video?
